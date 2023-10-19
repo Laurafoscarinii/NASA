@@ -1,4 +1,4 @@
-/* Estilo para a página inteira */
+
 body {
     font-family: Arial, sans-serif; 
     line-height: 1.6; 
@@ -62,51 +62,49 @@ body {
   }
   
   #images-container {
-    display: grid; /* Utiliza o CSS grid para organizar as imagens em uma grade */
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Define o modelo de coluna para a grade */
-    grid-gap: 20px; /* Adiciona espaço entre os itens da grade */
-    justify-items: center; /* Alinha os itens da grade ao centro horizontalmente */
-    padding: 20px; /* Adiciona preenchimento ao container de imagens */
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    grid-gap: 20px; 
+    justify-items: center; 
+    padding: 20px; 
   }
   
-  /* Estilo para o container do álbum */
+  
   .album {
-    cursor: pointer; /* Muda o cursor para uma mãozinha ao passar o mouse sobre o álbum */
-    text-align: center; /* Centraliza a descrição do álbum */
+    cursor: pointer; 
+    text-align: center; 
   }
   
-  /* Estilo para imagens e vídeos dentro do container do álbum */
+
   .album img,
   .album video {
-    width: 100%; /* Define a largura das imagens e vídeos para 100% do container pai */
-    height: auto; /* Mantém a proporção das imagens e vídeos */
-    border-radius: 10px; /* Adiciona borda arredondada às imagens e vídeos */
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
   }
   
-  /* Estilo para o elemento h2 dentro do container do álbum */
+
   .album h2 {
-    margin: 10px 0; /* Adiciona margem ao elemento h2 */
-    font-size: 16px; /* Define o tamanho da fonte do elemento h2 */
+    margin: 10px 0; 
+    font-size: 16px; 
   }
   
-  /* Estilo para a descrição dentro do modal */
+
   #modal-description {
-    font-size: 16px; /* Define o tamanho da fonte para a descrição dentro do modal */
-    color: #fff; /* Define a cor do texto para a descrição dentro do modal */
-  }
+    font-size: 16px; 
+    color: #fff; 
   
-  /* Estilo para o container do modal */
   #modal-container {
-    display: none; /* Esconde o container do modal por padrão */
-    position: fixed; /* Define a posição como fixa para posicionar o modal sobre a página */
-    z-index: 999; /* Define a ordem de empilhamento para trazer o modal para a frente */
-    top: 0; /* Posiciona o modal no topo da página */
-    left: 0; /* Posiciona o modal à esquerda da página */
-    width: 100%; /* Define a largura do modal para cobrir toda a página */
-    height: 100%; /* Define a altura do modal para cobrir toda a página */
-    background-color: rgba(0, 0, 0, 0.9); /* Define um fundo preto semitransparente para o modal */
-    align-items: center; /* Alinha verticalmente o conteúdo do modal */
-    justify-content: center; /* Alinha horizontalmente o conteúdo do modal */
+    display: none; 
+    position: fixed; 
+    z-index: 999; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.9); 
+    align-items: center; 
+    justify-content: center; 
   }
   
   #modal-image {
