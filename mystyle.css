@@ -1,0 +1,155 @@
+/* Estilo para a página inteira */
+body {
+    font-family: Arial, sans-serif; 
+    line-height: 1.6; 
+    background-color: #222222;
+    color: #a9a0a0; 
+    margin: 0;
+    padding: 0; 
+    font-size: 16px;
+
+    background-image: url('universo.webp');
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+  
+
+  h1 {
+    text-align: center; 
+    padding: 20px 0; 
+    background-color:#000000; 
+    color: #ff0000; 
+    margin: 0; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  #header {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px; 
+  }
+  
+
+  #search-container {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    margin-bottom: 20px; 
+  }
+  
+
+  #search-input {
+    padding: 10px; 
+    font-size: 16px; 
+    border: 1px solid #000000; 
+    border-radius: 5px 0 0 5px; 
+    width: 400px; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+
+  #search-button {
+    padding: 11px 20px; 
+    font-size: 16px; 
+    background-color: #000000; 
+    color: #fff; 
+    border: none; 
+    border-radius: 0 5px 5px 0; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer; 
+    margin-left: -1px; 
+  }
+  
+  #images-container {
+    display: grid; /* Utiliza o CSS grid para organizar as imagens em uma grade */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Define o modelo de coluna para a grade */
+    grid-gap: 20px; /* Adiciona espaço entre os itens da grade */
+    justify-items: center; /* Alinha os itens da grade ao centro horizontalmente */
+    padding: 20px; /* Adiciona preenchimento ao container de imagens */
+  }
+  
+  /* Estilo para o container do álbum */
+  .album {
+    cursor: pointer; /* Muda o cursor para uma mãozinha ao passar o mouse sobre o álbum */
+    text-align: center; /* Centraliza a descrição do álbum */
+  }
+  
+  /* Estilo para imagens e vídeos dentro do container do álbum */
+  .album img,
+  .album video {
+    width: 100%; /* Define a largura das imagens e vídeos para 100% do container pai */
+    height: auto; /* Mantém a proporção das imagens e vídeos */
+    border-radius: 10px; /* Adiciona borda arredondada às imagens e vídeos */
+  }
+  
+  /* Estilo para o elemento h2 dentro do container do álbum */
+  .album h2 {
+    margin: 10px 0; /* Adiciona margem ao elemento h2 */
+    font-size: 16px; /* Define o tamanho da fonte do elemento h2 */
+  }
+  
+  /* Estilo para a descrição dentro do modal */
+  #modal-description {
+    font-size: 16px; /* Define o tamanho da fonte para a descrição dentro do modal */
+    color: #fff; /* Define a cor do texto para a descrição dentro do modal */
+  }
+  
+  /* Estilo para o container do modal */
+  #modal-container {
+    display: none; /* Esconde o container do modal por padrão */
+    position: fixed; /* Define a posição como fixa para posicionar o modal sobre a página */
+    z-index: 999; /* Define a ordem de empilhamento para trazer o modal para a frente */
+    top: 0; /* Posiciona o modal no topo da página */
+    left: 0; /* Posiciona o modal à esquerda da página */
+    width: 100%; /* Define a largura do modal para cobrir toda a página */
+    height: 100%; /* Define a altura do modal para cobrir toda a página */
+    background-color: rgba(0, 0, 0, 0.9); /* Define um fundo preto semitransparente para o modal */
+    align-items: center; /* Alinha verticalmente o conteúdo do modal */
+    justify-content: center; /* Alinha horizontalmente o conteúdo do modal */
+  }
+  
+  #modal-image {
+    max-width: 90%; 
+    max-height: 90%; 
+  }
+  
+  #close-modal {
+    position: absolute; 
+    top: 20px; 
+    right: 30px; 
+    font-size: 30px; 
+    color: #fff; 
+    cursor: pointer; 
+  }
+
+
+.album {
+  cursor: pointer;
+  text-align: center; 
+}
+
+
+.album img,
+.album video {
+  width: 100%; 
+  height: auto; 
+  border-radius: 10px; 
+}
+
+
+.album h2 {
+  margin: 10px 0; 
+  font-size: 16px; 
+  color: #ffffff; 
+}
+
+.album img,
+.album video {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+    border: 2px solid white; 
+}
+
+
