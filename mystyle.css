@@ -93,7 +93,7 @@ body {
   #modal-description {
     font-size: 16px; 
     color: #fff; 
-  
+  }
   #modal-container {
     display: none; 
     position: fixed; 
